@@ -20,7 +20,7 @@ class SQLAnywhereServiceProvider extends ServiceProvider {
 	public function boot()
 	{
         $factory = $this->app['db'];
-        $factory->extend('sqlanywhere', function($config, $connection) {
+        $factory->extend('sasql', function($config, $connection) {
 
         	$config['name'] = $connection;
 			
